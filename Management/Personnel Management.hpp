@@ -11,15 +11,17 @@
 #include <vector>
 #include "Person.hpp"
 
-class PersonnelManagement {
+class PersonnelManagement
+{
 private:
     std::vector<Person> vPersonList;
-    void addPerson(const std::string& name, const std::string& personnelnumber);
-    void deletePerson(const std::string& pPersonnelnumber);
+    void addPerson(const std::string &name, const std::string &personnelnumber);
+    void deletePerson(const std::string &pPersonnelnumber);
     void print() const;
     void write() const;
+
 public:
-    PersonnelManagement(const std::string& filename);
+    PersonnelManagement(const std::string &filename);
     void dialogue();
 };
 
